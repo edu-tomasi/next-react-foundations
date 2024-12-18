@@ -25,3 +25,34 @@ HTML > DOM > UI
 Static > Dynamic > 
 
 # Cap 3: Updating UI with Javascript
+
+```
+<html>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            // Select the div element with 'app' id
+            const app = document.getElementById('app');
+
+            // Create a new H1 element
+            const header = document.createElement('h1');
+
+            // Create a new text node for the H1 element
+            const text = 'Develop. Preview. Ship 🚀';
+            const headerContent = document.createTextNode(text);
+
+            // Append the text to the H1 element
+            header.appendChild(headerContent);
+
+            // Place the H1 element inside the div
+            app.appendChild(header);
+
+        </script>
+    </body>
+</html>
+```
+
+## Programação Imperativa vs. Declarativa
+O código acima é um ótimo exemplo de __programação imperativa__. Você está escrevendo os passos para definir como a interface de usuário deve ser atualizada.
+Mas quando se trata de criar interfaces de usuários, uma abordagem __declarativa__ é preferida porque isso aumenta a velocidade de desenvolvimento.
+Em outras palavras a __programação imperativa__ é como dar instruções passo-a-passo para um chef fazer uma pizza. __Programação Declarativa__ é como pedir uma pizza sem ter conhecimento dos passo necessários para fazer uma pizza. 🍕
