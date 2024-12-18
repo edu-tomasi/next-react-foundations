@@ -23,3 +23,5 @@ Para cada ponto definido acima precisamos decidir se iremos criar uma solução 
 
 HTML > DOM > UI
 Static > Dynamic > 
+
+# Cap 3: Updating UI with Javascript
