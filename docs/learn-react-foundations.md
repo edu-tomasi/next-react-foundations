@@ -56,3 +56,26 @@ Static > Dynamic >
 O código acima é um ótimo exemplo de __programação imperativa__. Você está escrevendo os passos para definir como a interface de usuário deve ser atualizada.
 Mas quando se trata de criar interfaces de usuários, uma abordagem __declarativa__ é preferida porque isso aumenta a velocidade de desenvolvimento.
 Em outras palavras a __programação imperativa__ é como dar instruções passo-a-passo para um chef fazer uma pizza. __Programação Declarativa__ é como pedir uma pizza sem ter conhecimento dos passo necessários para fazer uma pizza. 🍕
+
+# Cap 4: Getting Started with React
+
+## Declarative React Code:
+```
+<script type="text/jsx">
+  const domNode = document.getElementById("app")
+  const root = ReactDOM.createRoot(domNode);
+  root.render(<h1>Develop. Preview. Ship.</h1>);
+</script>
+```
+
+## Imperative Javascript Code:
+```
+<script type="text/javascript">
+  const app = document.getElementById('app');
+  const header = document.createElement('h1');
+  const text = 'Develop. Preview. Ship.';
+  const headerContent = document.createTextNode(text);
+  header.appendChild(headerContent);
+  app.appendChild(header);
+</script>
+```
